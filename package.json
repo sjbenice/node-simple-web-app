@@ -1,0 +1,25 @@
+{
+  "name": "simple-web-app",
+  "version": "1.0.0",
+  "description": "Create a simple webApp using Node.js (Express, JavaScript), PostgresQL (Sequelize ORM).\r When running, the application must create a “users” table in the database using migration and add one user account to it, which will have only one “balance” field with a value of 10000. The “Umzug” library can be used to perform application-driven migrations.\r Write a route to update the user’s balance, both up and down, accepting the userId and amount parameters.\r An important condition is that the user’s balance cannot be negative.\r The balance must be changed in real time, without using queues and deferred tasks.",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3",
+    "umzug": "^3.8.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
